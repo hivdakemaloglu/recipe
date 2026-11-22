@@ -1,0 +1,303 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #FFF0F3;
+    color: #A52E52;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    background-color: #FFB6C8;
+    border-bottom: 3px solid #E85D75;
+}
+
+.logo h1 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #A52E52;
+}
+
+.logo p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #A52E52;
+    font-weight: 600;
+}
+
+.menu ul {
+    display: flex;
+    gap: 28px;
+}
+
+.menu a {
+    color: #A52E52;
+    font-size: 14px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #FFFFFF;
+}
+
+
+.hero {
+    min-height: 440px;
+
+    background-image:
+        linear-gradient(
+            rgba(165, 46, 82, 0.30),
+            rgba(165, 46, 82, 0.30)
+        ),
+        url("https://www.mrsjoneskitchen.com/wp-content/uploads/2024/11/Strawberry-cake-cut-720x1080.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.hero-text {
+    max-width: 500px;
+    color: #FFFFFF;
+}
+
+.hero-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.hero-text h2 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    color: #FFFFFF;
+}
+
+.hero-text p {
+    font-size: 15px;
+    margin-bottom: 22px;
+    color: #FFFFFF;
+}
+
+.button {
+    display: inline-block;
+    background-color: #E85D75;
+    color: #FFFFFF;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #A52E52;
+    transform: translateY(-4px);
+}
+
+main {
+    max-width: 1150px;
+    margin: auto;
+    padding: 55px 35px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+.category {
+    color: #E85D75;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.intro h2 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    color: #A52E52;
+    margin: 12px 0;
+}
+
+.intro p {
+    color: #A52E52;
+    font-size: 15px;
+}
+
+.recipe-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 50px;
+}
+
+.info-box {
+    background-color: #FFDCE5;
+    border: 2px solid #FFB6C8;
+    border-radius: 14px;
+    padding: 23px 12px;
+    text-align: center;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 22px rgba(232, 93, 117, 0.20);
+}
+
+.info-box span {
+    font-size: 30px;
+}
+
+.info-box h3 {
+    font-size: 14px;
+    color: #A52E52;
+    margin: 5px 0;
+}
+
+.info-box p {
+    font-size: 13px;
+    color: #C43D63;
+    font-weight: 600;
+}
+
+
+.recipe-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 25px;
+}
+
+.ingredients,
+.instructions {
+    background-color: #FFDCE5;
+    border: 2px solid #FFB6C8;
+    border-radius: 14px;
+    padding: 28px;
+    transition: box-shadow 0.3s ease;
+}
+
+.ingredients:hover,
+.instructions:hover {
+    box-shadow: 0 10px 25px rgba(232, 93, 117, 0.15);
+}
+
+.recipe-content h2 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    color: #A52E52;
+    margin-bottom: 8px;
+}
+
+.recipe-content p {
+    font-size: 13px;
+    color: #C43D63;
+    margin-bottom: 18px;
+}
+
+.recipe-content ul,
+.recipe-content ol {
+    padding-left: 22px;
+}
+
+.recipe-content li {
+    padding: 8px 0;
+    font-size: 14px;
+    color: #A52E52;
+    border-bottom: 1px solid #FFB6C8;
+}
+
+.recipe-content li::marker {
+    color: #E85D75;
+    font-weight: bold;
+}
+
+.tip {
+    margin-top: 35px;
+    padding: 27px;
+    background-color: #FFB6C8;
+    border-left: 6px solid #E85D75;
+    border-radius: 12px;
+}
+
+.tip h3 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #A52E52;
+    margin-bottom: 7px;
+}
+
+.tip p {
+    color: #A52E52;
+    font-size: 14px;
+}
+
+
+footer {
+    background-color: #FFB6C8;
+    color: #A52E52;
+    text-align: center;
+    padding: 40px 20px 20px;
+    border-top: 4px solid #E85D75;
+}
+
+footer h3 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: #A52E52;
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #A52E52;
+    margin-top: 8px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #E85D75;
+    margin-top: 22px;
+    padding-top: 15px;
+}
+
+.footer-bottom p {
+    color: #A52E52;
+    font-size: 12px;
+}
